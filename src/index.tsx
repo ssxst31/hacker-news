@@ -3,10 +3,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
+import Router from './Router';
 
 ReactDOM.render(
     <React.StrictMode>
-        <div className="text-red-100"></div>
+        <Router />
     </React.StrictMode>,
     document.getElementById('root'),
 );
