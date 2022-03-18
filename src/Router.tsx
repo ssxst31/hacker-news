@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
-import MainPage from './src/pages/MainPage';
+import MainPage from './pages/MainPage';
 
 function Router() {
     return (
