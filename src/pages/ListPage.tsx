@@ -14,7 +14,13 @@ function MainPage() {
     });
   }, []);
 
-  return <div className="flex h-screen justify-center items-center"></div>;
+  return (
+    <div className="grid grid-cols-10 gap-10 text-center">
+      {categoryList?.map((item, index) => (
+        <div key={index}>{item}</div>
+      ))}
+    </div>
+  );
 }
 
 export default MainPage;
