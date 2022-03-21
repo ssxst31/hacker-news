@@ -6,6 +6,7 @@
 2. Tailwind Css
 3. TypeScript
 4. material-ui
+5. axios
 
 ## 구현 기능
 
