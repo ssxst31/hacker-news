@@ -1,5 +1,7 @@
 # hacker-news
 
+[![2022-03-22-2-43-41.png](https://i.postimg.cc/1zsQGnnm/2022-03-22-2-43-41.png)](https://postimg.cc/tsSwygNw)
+
 ## 적용 기술
 
 1. React.js
