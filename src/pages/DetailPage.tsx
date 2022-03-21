@@ -3,10 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { getCategoryDetail } from '../api/category';
+import { CategoryDetail } from '../type';
 
 function MainPage() {
   const { id } = useParams();
-  const [categoryDetail, setCategoryDetail] = useState<any>();
+  const [categoryDetail, setCategoryDetail] = useState<CategoryDetail>();
 
   useEffect(() => {
     getCategoryDetail(Number(`${id}`)).then((res) => {
