@@ -10,7 +10,11 @@ function MainPage() {
 
   useEffect(() => {
     getCategory(`${text}`).then((res) => {
-      setCategoryList(res.data);
+      if (text === 'newstories') {
+        setCategoryList(res.data.sort((a: number, b: number) => a - b));
+      } else {
+        setCategoryList(res.data);
+      }
     });
   }, []);
 
