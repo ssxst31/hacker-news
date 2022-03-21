@@ -3,10 +3,12 @@ import React, { useState, useEffect } from 'react';
 import { getCategory } from '../api/category';
 import { useParams, Link } from 'react-router-dom';
 
+import LoadingPage from './LoadingPage';
+
 function MainPage() {
   const { text } = useParams();
 
-  const [categoryList, setCategoryList] = useState<number[]>();
+  const [categoryList, setCategoryList] = useState<number[] | undefined>();
 
   useEffect(() => {
     getCategory(`${text}`).then((res) => {
@@ -18,9 +20,13 @@ function MainPage() {
     });
   }, []);
 
+  if (!categoryList) {
+    return <LoadingPage />;
+  }
+
   return (
     <div className="grid grid-cols-10 gap-10 text-center">
-      {categoryList?.map((item, index) => (
+      {categoryList.map((item, index) => (
         <Link to={`/${text}/${item}`}>
           <div key={index}>{item}</div>
         </Link>
