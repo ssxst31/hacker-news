@@ -14,7 +14,18 @@ function MainPage() {
     });
   }, []);
 
-  return <div className="grid grid-cols-10 gap-10 text-center"></div>;
+  return (
+    <div className=" mx-auto text-center w-full">
+      <p>by : {categoryDetail?.by}</p>
+      <p>id : {categoryDetail?.id}</p>
+      <p>descendants : {categoryDetail?.descendants}</p>
+      <p>score : {categoryDetail?.score}</p>
+      <p>time : {categoryDetail?.time}</p>
+      <p>title : {categoryDetail?.title}</p>
+      <p>type : {categoryDetail?.type}</p>
+      <p>url : {categoryDetail?.url}</p>
+    </div>
+  );
 }
 
 export default MainPage;
