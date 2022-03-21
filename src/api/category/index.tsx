@@ -5,5 +5,5 @@ export const getCategory = (category: string) => {
 };
 
 export const getCategoryDetail = (id: number) => {
-  return get(`/item/${id}​.json?print=pretty`);
+  return get(`/item/${id}.json?print=pretty`);
 };
