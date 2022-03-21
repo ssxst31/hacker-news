@@ -12,6 +12,7 @@
 1. API 이용 List Page  
 2. API 이용 Detail Page
 3. LoadingPage 구현  
+4. 내림차순 구현
 
 ### Installation
 
